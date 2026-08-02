@@ -15,17 +15,19 @@ module "subnets" {
   subnets    = var.subnets
 }
 
-module "public_ip" {
-  depends_on = [module.resource_group]
-  source     = "../../modules/azurerm_public_ip"
-  public_ips = var.public_ips
-}
 
 module "key_vault" {
   depends_on = [module.resource_group]
   source     = "../../modules/azurerm_key_vault"
   key_vaults = var.key_vaults
 }
+
+module "public_ip" {
+  depends_on = [module.resource_group]
+  source     = "../../modules/azurerm_public_ip"
+  public_ips = var.public_ips
+}
+
 
 module "virtual_machines" {
   depends_on = [module.subnets, module.key_vault]
