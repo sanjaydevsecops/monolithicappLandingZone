@@ -181,7 +181,7 @@ load_balancers = {
 
 key_vaults = {
   kv1 = {
-    name        = "kv-chor-dev-123"
+    name        = "kv-chor-dev-8910"
     location    = "centralindia"
     rg_name     = "rg-chor-dev"
     secret_name = "admin-password"
