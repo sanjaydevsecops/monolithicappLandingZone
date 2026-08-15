@@ -1,4 +1,4 @@
-name: Terraform Landing Zone 
+name: Terraform Landing Zone
 
 on:
   push:
