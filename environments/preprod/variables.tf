@@ -1,4 +1,4 @@
-variable "rgs" {
+variable "rgss" {
   type = map(any)
 }
 
